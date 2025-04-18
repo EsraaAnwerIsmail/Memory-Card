@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="player-name" placeholder="Enter your name" />
+      <form>
+        <select name="choice" class="select-cells-number">
+          <option value="16" selected>4*4</option>
+          <option value="36">6*6</option>
+          <option value="64">8*8</option>
+        </select>
+        <select class="mode-selector">
+          <option value="symbols">Symbols</option>
+          <option value="numbers">Numbers</option>
+        </select>
+      </form>
+      <div class="playground"></div>
+      <div class="model">
+        <div class="model-content">
+          <h2 class="model-heading">Game Over</h2>
+          <div class="model-time">
+            <span>Time Spent: </span>
+          </div>
+          <h3 class="model-text">wrong attempts: <span class="wrong">0</span></h3>
+          <button class="btn model-btn">Start Again</button>
+        </div>
+      </div>
+      <div class="features">
+        <div class="timer"><span>00</span>min <span>00</span>sec</div>
+        <button class="btn restart-btn">New Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
